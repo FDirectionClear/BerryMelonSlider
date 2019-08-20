@@ -1,6 +1,6 @@
     <template>
         <div class = "app">
-            <slider direction = "rtl">
+            <slider :direction = "direction">
                 <img :src="firstPic">
                 <img :src="secondPic">
                 <img :src="thirdPic">
@@ -19,7 +19,8 @@
             return {
                 firstPic,
                 secondPic,
-                thirdPic
+                thirdPic,
+                direction: 'rtl'
             }
         },
         components: {
